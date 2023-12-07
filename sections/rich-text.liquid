@@ -25,12 +25,13 @@
                 class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
-                  data-cascade
-                  style="--animation-order: {{ forloop.index }};"
+                  data-cascade class='5xl text-blue-900'
+                  style="--animation-order: 5xl text-blue-900 {{ forloop.index }};"
                 {% endif %}
               >
                 {{ block.settings.heading }}
               </h2>
+              <h1 class='text-5xl font-bold text-blue-500'>TEST TEST</h1>
             {%- when 'caption' -%}
               <p
                 class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
