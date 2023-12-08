@@ -56,7 +56,7 @@
     "06de9166-196e-4408-a9dc-be7633cf977a": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<a href='{{ pages[page.metafields.accentuate.navbar_for_bycicle_page].url }}'>BYCICLE<\/a>",
+        "custom_liquid": "<a href='{{ pages[page.metafields.accentuate.navbar_for_bicycle_page].url }}'>BICYCLE<\/a>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
