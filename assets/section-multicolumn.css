@@ -116,11 +116,6 @@
     padding: 0;
   }
 
-  .multicolumn-list__item,
-  .grid--4-col-desktop .multicolumn-list__item {
-    padding-bottom: 0;
-  }
-
   .background-none .grid--2-col-tablet .multicolumn-list__item {
     margin-top: 4rem;
   }
