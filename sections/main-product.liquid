@@ -93,7 +93,7 @@
                                 <h1>{{ product.description | escape }}</h1>
 
 
-{% if variant.metafields.accentuate.discount %}
+{% if variant.metafields.accentuate.discount != blank %}
   <h1>{{ variant.metafields.accentuate.discount }}</h1>
 {% else %}
   <h1>OVAJ PROIZVOD NEMA DISCOUNT</h1>
