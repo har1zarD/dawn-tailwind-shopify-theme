@@ -62,27 +62,11 @@
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
-        },
-        "f07ab959-f9f3-467c-9445-f22f1dd39ef7": {
-          "type": "heading",
-          "settings": {
-            "heading": "OVO JE DRUGI TEST",
-            "heading_size": "h1"
-          }
-        },
-        "a9644d04-f516-46c9-9b71-38da834ae190": {
-          "type": "heading",
-          "settings": {
-            "heading": "12334556",
-            "heading_size": "h1"
-          }
         }
       },
       "block_order": [
         "heading",
-        "text",
-        "f07ab959-f9f3-467c-9445-f22f1dd39ef7",
-        "a9644d04-f516-46c9-9b71-38da834ae190"
+        "text"
       ],
       "settings": {
         "desktop_content_position": "center",
