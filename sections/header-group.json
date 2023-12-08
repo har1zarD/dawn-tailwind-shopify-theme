@@ -47,7 +47,7 @@
     "e0ec314e-f777-4a03-88aa-15da81b380e9": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<p>{{ page.metafields.accentuate.navbar_for_scuters.value }}<\/p>",
+        "custom_liquid": "{{ pages[page.metafields.accentuate.navbar_for_bicycle_page].url }}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
