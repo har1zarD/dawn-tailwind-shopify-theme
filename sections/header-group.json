@@ -47,7 +47,7 @@
     "e0ec314e-f777-4a03-88aa-15da81b380e9": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{{ page.metafields.accentuate.navbar_for_cars_page.value }}\n\nVRIEDNSOT",
+        "custom_liquid": "<a href='{{ pages[page.metafields.accentuate.navbar_for_cars_page].url }}'>NAVIGACIJA<\/a>\n\nVRIEDNSOT",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
