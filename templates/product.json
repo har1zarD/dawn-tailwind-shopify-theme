@@ -97,6 +97,20 @@
           "settings": {
             "custom_liquid": "{{ page.metafields.accentuate.navbar_for_cars_page.value }}\n\nOVDJE VRIJEDNOST"
           }
+        },
+        "d52da847-67f4-4b9a-859c-1036d83fe99d": {
+          "type": "text",
+          "settings": {
+            "text": "Text block",
+            "text_style": "body"
+          }
+        },
+        "ac5956cd-5188-4ce9-8465-ee63bbfd6c68": {
+          "type": "text",
+          "settings": {
+            "text": "Text block{{ product.metafields.custom.demo_metafield.value }}",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -113,7 +127,9 @@
         "collapsible-row-2",
         "collapsible-row-3",
         "share",
-        "ea424e05-158f-492a-8056-1b2d18f8536b"
+        "ea424e05-158f-492a-8056-1b2d18f8536b",
+        "d52da847-67f4-4b9a-859c-1036d83fe99d",
+        "ac5956cd-5188-4ce9-8465-ee63bbfd6c68"
       ],
       "settings": {
         "enable_sticky_info": true,
