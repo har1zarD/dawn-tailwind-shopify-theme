@@ -92,10 +92,16 @@
                 <h1>{{ product.title | escape }}</h1>
                                 <h1>{{ product.description | escape }}</h1>
 <h1 class='font-bold text-5xl text-red-900 underline'>{{ product.selected_or_first_available_variant.metafields.accentuate.discount }}</h1>
+
+<h1 class='pt-10 text-blue-500 font-bold'>{% assign my_string = 'Hello World!' %}
+{{my_string }}
+{% assign number = '25%' %}
+{{number }}
+</h1>
             
                 <a href="{{ product.url }}" class="product__title">
                   <h2 class="h1">
-                    {{ product.title | escape }}
+                    {{ product.title | escape }} 
                                         {{ product.description | escape }}
 
                   </h2>
