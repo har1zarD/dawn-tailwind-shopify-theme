@@ -108,7 +108,7 @@
         "ac5956cd-5188-4ce9-8465-ee63bbfd6c68": {
           "type": "text",
           "settings": {
-            "text": "Text block{{ product.metafields.custom.demo_metafield.value }}",
+            "text": "Review:  {{ product.metafields.custom.demo_metafield.value }}",
             "text_style": "body"
           }
         }
