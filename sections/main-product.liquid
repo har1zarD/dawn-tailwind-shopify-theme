@@ -90,7 +90,8 @@
             {%- when 'title' -%}
               <div class="product__title" {{ block.shopify_attributes }}>
                 <h1>{{ product.title | escape }}</h1>
-                                <h1>{{ product.description | escape }}</h1>
+                                <h1 class='text-indigo-700 font-semibold uppercase
+                                  '>{{ product.description | escape }}</h1>
 <h1 class='font-bold text-5xl text-red-900 underline'>{{ product.selected_or_first_available_variant.metafields.accentuate.discount }}</h1>
 
 <h1 class='pt-10 text-blue-500 font-bold'>{% assign my_string = 'Hello World!' %}
