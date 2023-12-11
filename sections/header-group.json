@@ -43,50 +43,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "e0ec314e-f777-4a03-88aa-15da81b380e9": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<a href='{{ page.metafields.accentuate.navbar_for_bicycle.value.url }}'>bicycle<\/a>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "06de9166-196e-4408-a9dc-be7633cf977a": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<a href='{{ page.metafields.accentuate.navbar_for_bicycle.value.url }}'>MOTORI<\/a>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "50ffd469-a0d3-443e-bcc8-a14de35df6e1": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<a href='{{ pages[page.metafields.accentuate.navbar_for_scuters_page].url }}'>SCUTERS<\/a>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "df97c79c-b4c1-4a5f-be31-6e08b365afb6": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<a href='{{ pages[page.metafields.accentuate.navbar_for_motorcycle_page].url }}'>MOTORCYCLE<\/a>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "e0ec314e-f777-4a03-88aa-15da81b380e9",
-    "06de9166-196e-4408-a9dc-be7633cf977a",
-    "50ffd469-a0d3-443e-bcc8-a14de35df6e1",
-    "df97c79c-b4c1-4a5f-be31-6e08b365afb6"
+    "header"
   ]
 }
