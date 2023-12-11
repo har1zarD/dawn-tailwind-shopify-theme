@@ -104,6 +104,14 @@
             "text": "Review:  {{ product.metafields.custom.demo_metafield.value }}",
             "text_style": "body"
           }
+        },
+        "7fd0f98c-f96c-495b-9ad5-cef354044a77": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
         }
       },
       "block_order": [
@@ -121,7 +129,8 @@
         "collapsible-row-3",
         "share",
         "ea424e05-158f-492a-8056-1b2d18f8536b",
-        "ac5956cd-5188-4ce9-8465-ee63bbfd6c68"
+        "ac5956cd-5188-4ce9-8465-ee63bbfd6c68",
+        "7fd0f98c-f96c-495b-9ad5-cef354044a77"
       ],
       "settings": {
         "enable_sticky_info": true,
