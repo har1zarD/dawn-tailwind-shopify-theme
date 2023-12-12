@@ -3,6 +3,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "5421d1e0-2428-4b17-816a-25d52dd9a878": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.material.value }}",
+            "text_style": "body"
+          }
+        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -115,6 +122,7 @@
         }
       },
       "block_order": [
+        "5421d1e0-2428-4b17-816a-25d52dd9a878",
         "vendor",
         "title",
         "caption",
