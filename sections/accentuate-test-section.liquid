@@ -6,15 +6,17 @@
       <div class="label">
         {{ section.settings.section-heading }}
       </div>
-      {% endif %} {% if section.settings.section-large-heading != blank %}
+      {% endif %}
+      {% if section.settings.section-large-heading != blank %}
       <div class="section-right">
         <div class="metafield input">
           {{ section.settings.section-large-heading }}
         </div>
-        {% endif %} {% if section.settings.description != blank %}
-        <div class="metafield">
-          {{ section.settings.description }}
-        </div>
+      </div>
+      {% endif %}
+      {% if section.settings.description != blank %}
+      <div class="metafield">
+        {{ section.settings.description }}
       </div>
       {% endif %}
     </div>
