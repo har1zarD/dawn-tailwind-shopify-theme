@@ -43,38 +43,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "0925873b-dcf5-45d1-9d73-ae95ce800f32": {
-      "type": "announcement-bar",
-      "blocks": {
-        "sections--15232045154371__0925873b-dcf5-45d1-9d73-ae95ce800f32-announcement-1": {
-          "type": "announcement",
-          "settings": {
-            "text": "TEXT",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "sections--15232045154371__0925873b-dcf5-45d1-9d73-ae95ce800f32-announcement-1"
-      ],
-      "custom_css": [
-        ".metafields-demo {display: flex; gap: 15px; flex-wrap: wrap;}"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "show_line_separator": true,
-        "show_social": false,
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "enable_country_selector": false,
-        "enable_language_selector": false
-      }
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "0925873b-dcf5-45d1-9d73-ae95ce800f32"
+    "header"
   ]
 }
