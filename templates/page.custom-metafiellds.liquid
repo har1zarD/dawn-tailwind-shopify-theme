@@ -1,0 +1,33 @@
+{%- comment -%}
+  This is a Liquid comment, which won't be rendered by Shopify.
+  The following JSON-like structure is used by Shopify to define schema for sections.
+{%- endcomment -%}
+
+{
+  "name": "Custom Metafields",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Custom Field",
+      "id": "custom_field"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Metafields",
+      "category": "Custom"
+    }
+  ]
+}
+  
+<div class="metafields-demo">
+  <div class="section">
+    <div class="section-inner">
+      <div class="label">Text</div>
+      <div class="section-right">
+        <div class="metafield input">{{ section.settings.custom_field }}</div>
+        <div class="metafield">{{ section.settings.custom_field }}</div>
+      </div>
+    </div>
+  </div>
+</div>
