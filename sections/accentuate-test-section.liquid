@@ -17,15 +17,17 @@
         </div>
       </div>
 
-      {% if section.settings.checkbox == true %}
-          <div class="checkbox-container" style="background-color: green;">
-            {{ section.settings.checkbox }}
-          </div>
-        {% else %}
-          <div class="checkbox-container" style="background-color: red;">
-            {{ section.settings.checkbox }}
-          </div>
-        {% endif %}
+{% assign checkbox_color = 'red' %}
+{% if section.settings.checkbox == true %}
+  {% assign checkbox_color = 'green' %}
+{% endif %}
+
+<div class="checkbox-container" style="background-color: {{ checkbox_color }};">
+  {{ section.settings.checkbox }}
+</div>
+
+
+
           
       {% endif %}
     </div>
