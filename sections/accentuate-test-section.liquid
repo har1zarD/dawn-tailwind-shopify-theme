@@ -5,15 +5,19 @@
 <div class="container">
         <div class="section-inner">
 
-<div class="welcome-outter">
+<div class="welcome-outter label">
 {% if section.settings.section-heading != blank %}
 <h2 class="section-heading">{{ section.settings.section-heading }}</h2>
 {% endif %}
+        <div class="section-right">
+
 {% if section.settings.section-large-heading != blank %}
 <h1 class="section-large-heading">{{ section.settings.section-large-heading }}</h1>
 {% endif %}
 {% if section.settings.description != blank %}
 <p class="discription">{{ section.settings.description }}</p>
+          </div>
+
 {% endif %}
 </div>
           </div>
