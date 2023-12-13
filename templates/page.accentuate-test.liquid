@@ -2,8 +2,17 @@
 <div class="metafields-demo">
   <div class="section">
     
-    {% include 'metafield_component' with 'custom_field_value' %}
-    
+    <div class="section-inner">
+      <div class="label">Text</div>
+      <div class="section-right">
+        <div class="metafield input">
+          {% raw %}{{ page.metafields.custom_field }}{% endraw %}
+        </div>
+        <div class="metafield">
+          {{ page.metafields.custom_field }}
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
