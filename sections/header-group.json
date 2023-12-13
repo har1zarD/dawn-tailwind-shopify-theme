@@ -47,6 +47,11 @@
     "ad9b2226-1cb7-4c9b-a3fd-c30ee9cf976d": {
       "type": "accentuate-test-section",
       "settings": {
+        "section-heading": "sad",
+        "section-large-heading": "dsa",
+        "description": "da",
+        "view-btn-link": "",
+        "view-btn": ""
       }
     }
   },
