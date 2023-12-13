@@ -47,7 +47,7 @@
     "ad9b2226-1cb7-4c9b-a3fd-c30ee9cf976d": {
       "type": "accentuate-test-section",
       "custom_css": [
-
+        "body {grid-template-rows: auto auto auto;}"
       ],
       "settings": {
         "section-heading": "sad",
