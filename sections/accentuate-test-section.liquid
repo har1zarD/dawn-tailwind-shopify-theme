@@ -9,15 +9,19 @@
 {% if section.settings.section-heading != blank %}
 <h2 class="section-heading">{{ section.settings.section-heading }}</h2>
 {% endif %}
-        <div class="section-right">
 
 {% if section.settings.section-large-heading != blank %}
+          <div class="section-right">
+          <div class="metafield input">
 <h1 class="section-large-heading">{{ section.settings.section-large-heading }}</h1>
+          </div>
 {% endif %}
 {% if section.settings.description != blank %}
-<p class="discription">{{ section.settings.description }}</p>
-          </div>
+            <div class="metafield">
 
+<p class="discription">{{ section.settings.description }}</p>
+            </div>
+            </div>
 {% endif %}
 </div>
           </div>
