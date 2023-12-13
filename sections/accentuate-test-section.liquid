@@ -9,7 +9,7 @@
       {% endif %} {% if section.settings.section-large-heading != blank %}
       <div class="section-right">
         <div class="metafield input">
-            {{ section.settings.section-large-heading | escape }}
+          {{ section.settings.section-large-heading }}
         </div>
         {% endif %} {% if section.settings.description != blank %}
         <div class="metafield">
@@ -37,8 +37,7 @@
   "name": "Metafields Test", // Section name
   "settings": [
     { "id": "section-heading", "type": "text", "label": "Heading 1" },
-    { "id": "section-large-heading", "type": "text",       "default": "Default Value",
- "label": "Heading 2" } ,
+    { "id": "section-large-heading", "type": "text",  "label": "Heading 2" } ,
     { "id": "description", "type": "textarea", "label": "Description" },
     { "id": "checkbox", "type": "checkbox", "label": "Checkbox" }
   ],
