@@ -60,7 +60,7 @@
       "type": "accentuate-test-section",
       "settings": {
         "section-heading": "dsa",
-        "section-large-heading": "das",
+        "section-large-heading": "{{ page.metafields.accentuate.value }}",
         "description": "dsa",
         "checkbox": true
       }
