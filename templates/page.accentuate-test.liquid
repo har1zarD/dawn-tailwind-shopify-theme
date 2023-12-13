@@ -3,54 +3,10 @@
   <div class="customize-section">
     <button onclick="addBlock()">Add Block</button>
     <div id="blocks-container">
-      {% for block in page.metafields.blocks %}
-        <div class="section-inner">
-          <div class="label">{{ block.label }}</div>
-          <div class="section-right">
-            <div class="metafield input">
-              {{ block.input_value }}
-            </div>
-            <div class="metafield">
-              {{ block.display_value }}
-            </div>
-          </div>
-        </div>
-      {% endfor %}
+      <!-- Dynamic blocks will be added here -->
     </div>
   </div>
 </div>
-
-<script>
-  function addBlock() {
-    // You need to adapt this based on your specific needs
-    var newBlock = {
-      label: 'New Block',
-      input_value: '{% raw %}{{ page.metafields.custom_field }}{% endraw %}',
-      display_value: '{{ page.metafields.custom_field }}'
-    };
-
-    // Append the new block to the blocks container
-    var blocksContainer = document.getElementById('blocks-container');
-    blocksContainer.innerHTML += generateBlockHTML(newBlock);
-  }
-
-  function generateBlockHTML(block) {
-    return `
-      <div class="section-inner">
-        <div class="label">${block.label}</div>
-        <div class="section-right">
-          <div class="metafield input">
-            ${block.input_value}
-          </div>
-          <div class="metafield">
-            ${block.display_value}
-          </div>
-        </div>
-      </div>
-    `;
-  }
-</script>
-
 
 <style>
   .metafields-demo {
@@ -59,7 +15,7 @@
     flex-wrap: wrap;
   }
 
-  .section {
+  .customize-section {
     width: 100%;
     max-width: 1120px;
     margin: auto;
@@ -108,3 +64,28 @@
     color: white;
   }
 </style>
+
+<script>
+  function addBlock() {
+    // Create a unique ID for the new block
+    var blockId = 'block-' + Date.now();
+
+    // Create the new block HTML structure
+    var newBlock = `
+      <div id="${blockId}" class="section-inner">
+        <div class="label">New Block</div>
+        <div class="section-right">
+          <div class="metafield input">
+            {% raw %}{{ page.metafields.custom_field }}{% endraw %}
+          </div>
+          <div class="metafield">
+            {{ page.metafields.custom_field }}
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Append the new block to the blocks container
+    document.getElementById('blocks-container').innerHTML += newBlock;
+  }
+</script>
