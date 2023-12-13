@@ -50,7 +50,7 @@
         "sections--15232045154371__0925873b-dcf5-45d1-9d73-ae95ce800f32-announcement-1": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "TEXT",
             "link": ""
           }
         }
@@ -59,7 +59,7 @@
         "sections--15232045154371__0925873b-dcf5-45d1-9d73-ae95ce800f32-announcement-1"
       ],
       "custom_css": [
-        ".metafields-demo {display: flex; gap: 15px; flex-wrap: wrap; }"
+        ".metafields-demo {display: flex; gap: 15px; flex-wrap: wrap;}"
       ],
       "settings": {
         "color_scheme": "",
