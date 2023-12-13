@@ -2,7 +2,6 @@
 <section class="metafields-demo">
     <div class="customize-section">
         <div class="section-inner">
-          <div class="label">
             {% if section.settings.section-heading != blank %}
               <h2 class="label">{{ section.settings.section-heading }}</h2>
             {% endif %}
@@ -17,7 +16,6 @@
                 <p class="metafield">{{ section.settings.description }}</p>
             {% endif %}
           </div>
-      </div>
 
       <div class="col-xs-12 col-md-12 text-center">
         {% if section.settings.view-btn != blank %}
