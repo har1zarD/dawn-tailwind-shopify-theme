@@ -16,15 +16,16 @@
           {{ section.settings.description }}
         </div>
       </div>
-      {% if section.settings.checkbox == true %}
-          <div class="checkbox-container" style="background-color: green;">
-            {{ section.settings.checkbox }}
-          </div>
-        {% else %}
-          <div class="checkbox-container" style="background-color: red;">
-            {{ section.settings.checkbox }}
-          </div>
-        {% endif %}
+   {% if section.settings.checkbox %}
+  <div class="checkbox-container" style="background-color: green;">
+    {{ section.settings.checkbox }}
+  </div>
+{% else %}
+  <div class="checkbox-container" style="background-color: red;">
+    {{ section.settings.checkbox }}
+  </div>
+{% endif %}
+
           
       {% endif %}
     </div>
