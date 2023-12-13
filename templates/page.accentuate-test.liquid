@@ -8,30 +8,11 @@
       <div class="label">Univerzalni Metafield</div>
       <div class="section-right">
         <div class="metafield input">
-          {% raw %}{{ product.metafields.accentuate.value }}{% endraw %}
+          {% raw %}{{ page.metafields.custom_field }}{% endraw %}
         </div>
         <div class="metafield">
-{{ product.metafields.accentuate.value }}        </div>
-      </div>
-    </div>
-    <div class="section-inner">
-      <div class="label">Univerzalni Metafield</div>
-      <div class="section-right">
-        <div class="metafield input">
-          {% raw %}{{ product.metafields.accentuate.value }}{% endraw %}
+          {{ page.metafields.custom_field }}
         </div>
-        <div class="metafield">
-{{ product.metafields.accentuate.value }}        </div>
-      </div>
-    </div>
-    <div class="section-inner">
-      <div class="label">Univerzalni Metafield</div>
-      <div class="section-right">
-        <div class="metafield input">
-          {% raw %}{{ product.metafields.accentuate.value }}{% endraw %}
-        </div>
-        <div class="metafield">
-{{ product.metafields.accentuate.value }}        </div>
       </div>
     </div>
   </div>
@@ -86,7 +67,7 @@
   .metafield {
     color: #1e293b;
     padding: 5px 15px;
-    border-radius: 1px;
+    border-radius: 5px;
     background-color: white;
     overflow-wrap: anywhere;
   }
