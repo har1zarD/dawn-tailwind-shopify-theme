@@ -17,11 +17,15 @@
         </div>
       </div>
 
-     {% if section.settings.checkbox == true %}
-        <div class="checkbox-container" style="padding: 10px; margin: 10px; background-color: green;"></div>
-      {% else %}
-        <div class="checkbox-container" style="background-color: red;"></div>
-      {% endif %}
+      {% if section.settings.checkbox == true %}
+          <div class="checkbox-container" style="background-color: green;">
+            {{ section.settings.checkbox }}
+          </div>
+        {% else %}
+          <div class="checkbox-container" style="background-color: red;">
+            {{ section.settings.checkbox }}
+          </div>
+        {% endif %}
           
       {% endif %}
     </div>
@@ -47,7 +51,7 @@
 {% stylesheet %}
 <style>
   .checkbox-container{
-    display: flex;
+    display:flex;
     padding: 20px;
   }
   .metafields-demo {
