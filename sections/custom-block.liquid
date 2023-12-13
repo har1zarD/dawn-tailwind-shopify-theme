@@ -1,21 +1,36 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom Block",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Custom Field",
+      "id": "custom_field",
+      "default": "Default Value"
+    },
+    {
+      "type": "color",
+      "label": "Background Color",
+      "id": "background_color",
+      "default": "#ffffff"
+    }
+    // Dodajte druge postavke po potrebi
+  ],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
-<div class="section-inner">
+
+<div class="section-inner" style="background-color: {{ section.settings.background_color }}">
   <div class="label">Your Custom Block</div>
   <div class="section-right">
     <div class="metafield input">
-      {% raw %}{{ section.settings.custom_field }}{% endraw %}
+      {{ section.settings.custom_field }}
     </div>
     <!-- Dodajte druge elemente po potrebi -->
   </div>
 </div>
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
