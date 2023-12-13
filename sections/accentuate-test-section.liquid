@@ -17,16 +17,13 @@
 
             {% if section.settings.description != blank %}
                 <div class="metafield">{{ section.settings.description }}</div>
+                                </div>
+
             {% endif %}
           </div>
+          
 
-      <div class="col-xs-12 col-md-12 text-center">
-        {% if section.settings.view-btn != blank %}
-          <button class="view-btn">
-            <a href="{{ section.settings.view-btn-link }}">{{ section.settings.view-btn }}</a>
-          </button>
-        {% endif %}
-      </div>
+      
     </div>
 </section>
 <!-- Welcome section ends -->
