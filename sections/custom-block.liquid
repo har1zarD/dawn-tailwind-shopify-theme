@@ -4,6 +4,15 @@
     "settings": []
   }
 {% endschema %}
+<div class="section-inner">
+  <div class="label">Your Custom Block</div>
+  <div class="section-right">
+    <div class="metafield input">
+      {% raw %}{{ section.settings.custom_field }}{% endraw %}
+    </div>
+    <!-- Dodajte druge elemente po potrebi -->
+  </div>
+</div>
 
 {% stylesheet %}
 {% endstylesheet %}
