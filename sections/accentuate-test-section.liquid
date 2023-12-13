@@ -1,30 +1,24 @@
 <!-- Welcome section starts -->
 <section class="metafields-demo">
-    <div class="customize-section">
-        <div class="section-inner">
-            {% if section.settings.section-heading != blank %}
-              <h2 class="label">{{ section.settings.section-heading }}</h2>
-            {% endif %}
-
-            {% if section.settings.section-large-heading != blank %}
-              <div class="section-right">
-                          <div class="metafield input">
-
-                  {{ section.settings.section-large-heading }}
-                              </div>
-
-            {% endif %}
-
-            {% if section.settings.description != blank %}
-                <div class="metafield">{{ section.settings.description }}</div>
-                                </div>
-
-            {% endif %}
-          </div>
-          
-
-      
+  <div class="customize-section">
+    <div class="section-inner">
+      {% if section.settings.section-heading != blank %}
+      <h2 class="label">
+        {{ section.settings.section-heading }}
+      </h2>
+      {% endif %} {% if section.settings.section-large-heading != blank %}
+      <div class="section-right">
+        <div class="metafield input">
+          {{ section.settings.section-large-heading }}
+        </div>
+        {% endif %} {% if section.settings.description != blank %}
+        <div class="metafield">
+          {{ section.settings.description }}
+        </div>
+      </div>
+      {% endif %}
     </div>
+  </div>
 </section>
 <!-- Welcome section ends -->
 
