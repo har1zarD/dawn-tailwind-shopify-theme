@@ -1,10 +1,19 @@
 {% layout true %}
 <div class="metafields-demo">
   <div class="customize-section">
-    <button onclick="addBlock()">Add Block</button>
-    <div id="blocks-container">
-      <!-- Dynamic blocks will be added here -->
-    </div>
+    {% for block in (1..3) %}
+      <div class="section-inner">
+        <div class="label">Block {{ block }}</div>
+        <div class="section-right">
+          <div class="metafield input">
+            {% raw %}{{ page.metafields.custom_field }}{% endraw %}
+          </div>
+          <div class="metafield">
+            {{ page.metafields.custom_field }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
   </div>
 </div>
 
@@ -19,10 +28,6 @@
     width: 100%;
     max-width: 1120px;
     margin: auto;
-  }
-
-  .heading {
-    margin-top: 0;
   }
 
   .label {
@@ -64,28 +69,3 @@
     color: white;
   }
 </style>
-
-<script>
-  function addBlock() {
-    // Create a unique ID for the new block
-    var blockId = 'block-' + Date.now();
-
-    // Create the new block HTML structure
-    var newBlock = `
-      <div id="${blockId}" class="section-inner">
-        <div class="label">New Block</div>
-        <div class="section-right">
-          <div class="metafield input">
-            {% raw %}{{ page.metafields.custom_field }}{% endraw %}
-          </div>
-          <div class="metafield">
-            {{ page.metafields.custom_field }}
-          </div>
-        </div>
-      </div>
-    `;
-
-    // Append the new block to the blocks container
-    document.getElementById('blocks-container').innerHTML += newBlock;
-  }
-</script>
