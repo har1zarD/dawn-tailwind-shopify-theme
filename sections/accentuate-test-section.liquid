@@ -1,31 +1,34 @@
-<!-- sections/custom.liquid -->
+{% schema %}
+{
+  "name": "Custom Section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Vrijednost 1",
+      "id": "value1"
+    },
+    {
+      "type": "text",
+      "label": "Vrijednost 2",
+      "id": "value2"
+    },
+    {
+      "type": "text",
+      "label": "Vrijednost 3",
+      "id": "value3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
 
 <div class="custom-section">
-  <div class="custom-column">
-    <label for="value1">Vrijednost 1:</label>
-    {{ section.settings.value1 }}
-  </div>
-
-  <div class="custom-column">
-    <label for="value2">Vrijednost 2:</label>
-    {{ section.settings.value2 }}
-  </div>
-
-  <div class="custom-column">
-    <label for="value3">Vrijednost 3:</label>
-    {{ section.settings.value3 }}
-  </div>
+  <p>Vrijednost 1: {{ section.settings.value1 }}</p>
+  <p>Vrijednost 2: {{ section.settings.value2 }}</p>
+  <p>Vrijednost 3: {{ section.settings.value3 }}</p>
 </div>
-
-<style>
-  /* Dodajte ovaj CSS unutar istog file-a ili uključite izvanjski stylesheet */
-  .custom-section {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .custom-column {
-    flex: 1;
-    margin-right: 15px; /* prilagodite razmak između kolona prema potrebi */
-  }
-</style>
