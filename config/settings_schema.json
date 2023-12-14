@@ -34,26 +34,6 @@
     ]
   },
   {
-    "name": "Custom Section",
-    "settings": [
-      {
-        "type": "text",
-        "label": "Vrijednost 1",
-        "id": "value1"
-      },
-      {
-        "type": "text",
-        "label": "Vrijednost 2",
-        "id": "value2"
-      },
-      {
-        "type": "text",
-        "label": "Vrijednost 3",
-        "id": "value3"
-      }
-    ]
-  },
-  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
