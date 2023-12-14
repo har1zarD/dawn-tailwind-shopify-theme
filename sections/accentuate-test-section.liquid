@@ -1,34 +1,9 @@
-{% schema %}
-{
-  "name": "Custom Section",
-  "settings": [
-    {
-      "type": "text",
-      "label": "Vrijednost 1",
-      "id": "value1"
-    },
-    {
-      "type": "text",
-      "label": "Vrijednost 2",
-      "id": "value2"
-    },
-    {
-      "type": "text",
-      "label": "Vrijednost 3",
-      "id": "value3"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Default",
-      "category": "Custom"
-    }
-  ]
-}
-{% endschema %}
+<!-- custom_section.liquid -->
 
 <div class="custom-section">
-  <p>Vrijednost 1: {{ section.settings.value1 }}</p>
-  <p>Vrijednost 2: {{ section.settings.value2 }}</p>
-  <p>Vrijednost 3: {{ section.settings.value3 }}</p>
+  <h2>{{ section.settings.title }}</h2>
+  <!-- Dodajte HTML elemente i stilove prema potrebi -->
+  <input type="text" name="value1" value="{{ section.settings.value1 }}">
+  <input type="text" name="value2" value="{{ section.settings.value2 }}">
+  <input type="text" name="value3" value="{{ section.settings.value3 }}">
 </div>
