@@ -1,8 +1,54 @@
 <!-- custom_section.liquid -->
 
+{% schema %}
+{
+  "name": "Custom Section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "text",
+      "label": "Value 1",
+      "id": "value1"
+    },
+    {
+      "type": "text",
+      "label": "Value 2",
+      "id": "value2"
+    },
+    {
+      "type": "text",
+      "label": "Value 3",
+      "id": "value3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+/* Dodajte CSS stilove prema potrebi */
+.custom-section {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.custom-section input {
+  margin-bottom: 5px;
+}
+</style>
+
 <div class="custom-section">
   <h2>{{ section.settings.title }}</h2>
-  <!-- Dodajte HTML elemente i stilove prema potrebi -->
   <input type="text" name="value1" value="{{ section.settings.value1 }}">
   <input type="text" name="value2" value="{{ section.settings.value2 }}">
   <input type="text" name="value3" value="{{ section.settings.value3 }}">
